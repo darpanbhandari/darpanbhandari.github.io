@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>Gradient</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Swiper -->
+		<!------------>
+		<link rel="stylesheet" href="swiper.min.css">
+	</head>
+	<body>
+		<div class="conatiner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="IMG_0425.jpg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="jodhpur.jpg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="kanyakumari.jpg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="kolkata.jpg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="rafting.jpg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="rafting2.jpg">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box">
+							<img src="rock.jpg">
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			
+		</div>
+		<script src="grade.js"></script>
+		<script type="text/javascript">
+		window.addEventListener('load', function(){
+		Grade(document.querySelectorAll('.box'))
+		})
+		</script>
+		<script src="swiper.min.js"></script>
+		<script>
+		 var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+      }
+    });
+		</script>
+	</body>
+</html>
